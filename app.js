@@ -21,9 +21,7 @@ const connection = mongoose
   });
 app.use(cors());
 require("./routes")(app);
-app.get("/", (req, res) => {
-  console.log("hello home");
-});
+
 app.listen(5000, () => {
   console.log("listening");
 });
