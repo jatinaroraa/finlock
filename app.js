@@ -22,7 +22,7 @@ const connection = mongoose
 app.use(cors());
 require("./routes")(app);
 app.get("/", (req, res) => {
-  res.send("hello from home");
+  return res.send("hello from home");
 });
 app.listen(5000, () => {
   console.log("listening");
