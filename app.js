@@ -7,7 +7,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const config = require("./config/development");
-app.use(express.static("build"));
+// app.use(express.static("build"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
